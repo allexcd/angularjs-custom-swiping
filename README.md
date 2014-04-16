@@ -36,3 +36,10 @@ or
   Content
 </custom-swiping>
 ```
+
+Demo
+====
+
+http://embed.plnkr.co/CnxLCNyquBsEDeqn7Dbz/preview
+
+http://plnkr.co/edit/CnxLCNyquBsEDeqn7Dbz?p=info
