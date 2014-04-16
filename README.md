@@ -15,6 +15,24 @@ Usage
 =====
 Once you've checked that everything is in place, you can use this directive like so:
 
+```html
 <custom-swiping left="swipeLeftCallback" right="swipeRightCallback">
   Content
 </custom-swiping>
+```
+
+or
+
+```html
+<custom-swiping left="swipeLeftCallback">
+  Content
+</custom-swiping>
+```
+
+or 
+
+```html
+<custom-swiping right="swipeRightCallback">
+  Content
+</custom-swiping>
+```
