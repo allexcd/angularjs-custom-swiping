@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>AngularCustomSwiping</title>
+    <script type="text/javascript" src="js/lib/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="js/lib/angular.min.js"></script>
+
+    <!--controllers-->
+    <script type="text/javascript" src="js/controllers/customSwipeCtrl.js"></script>
+
+    <!--directives-->
+    <script type="text/javascript" src="js/directives/customSwiping.js"></script>
+
+    <!--modules-->
+    <script type="text/javascript" src="js/modules/controllers.js"></script>
+    <script type="text/javascript" src="js/modules/directives.js"></script>
+    <script type="text/javascript" src="js/modules/customSwipingModules.js"></script>
+
+</head>
+<body ng-app="customSwipingModules">
+
+    <div ng-controller="customSwipeCtrl">
+        <custom-swiping left="swipeLeft" right="swipeRight">
+            Swipe on this first element
+        </custom-swiping>
+
+        <custom-swiping left="swipeLeft" right="swipeRight">
+            Swipe on this second element
+        </custom-swiping>
+    </div>
+
+</body>
+</html>
