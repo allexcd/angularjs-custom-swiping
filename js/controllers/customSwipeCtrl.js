@@ -8,11 +8,13 @@
  * @param $scope
  */
 function customSwipeCtrl($scope) {
-    $scope.swipeLeft = function() {
+    "use strict";
+    /*global window*/
+    $scope.swipeLeft = function () {
         window.alert('swiped left');
-    }
+    };
 
-    $scope.swipeRight = function() {
+    $scope.swipeRight = function () {
         window.alert('swiped right');
-    }
+    };
 }

@@ -29,7 +29,7 @@ function customSwiping() {
                 } else {
                     if (event.touches) {
                         touch = event.touches[0];
-                    } else if (event.originalEvent) {
+                    } else {
                         touch = event.originalEvent.touches[0] || event.originalEvent.changedTouches[0];
                     }
                 }
