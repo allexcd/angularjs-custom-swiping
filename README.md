@@ -5,7 +5,11 @@ Swiping effect directive that works on Internet Explorer Mobile.
 
 IE Mobile can give lots of headaches since it knows nothing about touch events, using pointer events instead.
 
-For now, this directive use mouse events to simulate a swipe for IE Mobile and desktop browsers. In IE 10, these events use MS prefix (like MSPointerDown, MSPointerMove etc). IE 11 do not use MS prefix for pointer events and who knows what's going to happen in IE 12 and so on. That's why this directive avoids pointer events at this time and so all conditionals needed to check for these changes.
+For now, this directive use mouse events to simulate a swipe for IE Mobile and desktop browsers. In IE Mobile, pointer events can be used to simulate a swipe effect. Touch events are not supported.
+
+Pointer events use MS prefixes in IE 10 (MSPointerDown, MSPointerMove etc) but in IE 11 this prefix has been removed. Who knows what's going to happen in IE 12 and so on.
+
+That's why this directive avoids pointer events at this time and all conditionals needed to check for them.
 
 Dependencies
 ============
